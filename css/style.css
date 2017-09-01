@@ -1,0 +1,25 @@
+h1 {
+    font-size: 100px;
+    margin: 0px;
+}
+#main {
+    width: 1000px;
+    margin: auto;
+    background: white;
+}
+#header {
+    height: 60px;
+    background: pink;
+}
+#navbar {
+    height: 40px;
+    background: black;
+}
+#middle {
+    height: 600px;
+    background: cyan;
+}
+#foot {
+    height: 100px;
+    background: orange;
+}

@@ -1,0 +1,9 @@
+h1 {
+    font-family: 'Times New Roman';
+}
+.main {
+    height: 60%;
+    width: 60%;
+    margin: auto;
+    bgcolor: white;
+}
