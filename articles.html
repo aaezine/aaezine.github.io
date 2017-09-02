@@ -1,30 +1,45 @@
 --- 
 layout: default 
-permalink: /articles/
+permalink: /articles/ 
+years: 
+- 2017 
+- 2016 
+- 2015
+months: 
+- January 
+- February 
+- March 
+- April 
+- May 
+- June 
+- July 
+- August 
+- September 
+- October 
+- November 
+- December 
 ---
 
 <section class='page-section'>
 	<div class='container-narrow'>
 		<ul class="blog-index">
-			{% for post in site.posts %}
+			{% for year in page.years %} {{ year }} {% for post in site.posts %}
+			{% if post.year == year %}
 			<li class="mb-4 mb-md-6 mb-lg-8">
 				<h2>
 					<a class="blog-index-link mr-2"
 						href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 					<div class="who-when mt-1">
 						<span class="octicon octicon-calendar pr-2"></span>
-						{{post.month}}
-						<time class="blog-index-time">							{% if post.year == 2017 %} HELLA {% endif %}
-						{{ post.date | date: '%B %d,
-							%Y' }}</time>
+						<time class="blog-index-time"> 
+							{{ post.date | date: '%B %d, %Y' }}</time>
 					</div>
 				</h2> {{ post.excerpt }}
 				<p>
 					<a href="{{ post.url | prepend: site.baseurl }}">Read more <span
 						class="octicon octicon-arrow-small-right"></span></a>
 				</p>
-			</li> 
-			{% endfor %}
+			</li>  {% endif %} {% endfor %} {% endfor %}
 		</ul>
 	</div>
 </section>
