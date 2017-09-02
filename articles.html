@@ -13,7 +13,7 @@ permalink: /articles/
 						href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 					<div class="who-when mt-1">
 						<span class="octicon octicon-calendar pr-2"></span>
-						<time class="blog-index-time">							{% if post.date | date:'%Y' == 2016 %} HELL {% endif %}
+						<time class="blog-index-time">							{% if post.date | date:'%Y' == '2016' %} HELL {% endif %}
 						{{ post.date | date: '%B %d,
 							%Y' }}</time>
 					</div>
