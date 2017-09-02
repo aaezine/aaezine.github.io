@@ -25,7 +25,7 @@ months:
 		<ul>
 			{% for year in page.years %} <details> <summary>{{ year }}</summary> {% for post in site.posts %}
 			{% if post.year == year %}
-			<li class="mb-4 mb-md-6 mb-lg-8">
+			<li class="mb-4 mb-md-6 mb-lg-8 list">
 					<a class="list"
 						href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 					<div class="who-when mt-1">
