@@ -33,6 +33,8 @@ $('#article_tree').find('span').click(function(e){
 		<ul id='article_tree' class='article-tree'>
 			{% for year in page.years %} <li><span>{{ year }}</span></li> 
 			<ul>
+			{% for month in page.month %} <li><span>{{ month }}</span></li> 
+			<ul>
 			{% for post in site.posts %}
 			{% if post.year == year %}
 			<li class="mb-4 mb-md-6 mb-lg-8 list">
@@ -45,7 +47,7 @@ $('#article_tree').find('span').click(function(e){
 							{{ post.date | date: '%B %d, %Y' }}</time>
 					</div>
 				</span>
-			</li>  {% endif %}  {% endfor %} </ul> </br> {% endfor %}
+			</li>  {% endif %} {% endfor %} </ul> {% endfor %} </ul> </br> {% endfor %}
 		</ul>
 	</div>
 </section>
