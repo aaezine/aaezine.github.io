@@ -13,9 +13,9 @@ permalink: /articles/
 						href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 					<div class="who-when mt-1">
 						<span class="octicon octicon-calendar pr-2"></span>
-						<time class="blog-index-time">{{ post.date | date: '%B %d,
+						<time class="blog-index-time">							{{post.date | '%Y'}}
+						{{ post.date | date: '%B %d,
 							%Y' }}</time>
-							{{post.date | '%Y'}}
 					</div>
 				</h2> {{ post.excerpt }}
 				<p>
