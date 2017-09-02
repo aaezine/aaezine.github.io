@@ -12,6 +12,14 @@
 <link rel="alternate" type="application/rss+xml"
 	title="Asian American E-Zine" href="/feed.xml">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$('#article-tree').find('span').click(function(e){
+    $(this).parent().children('ul').toggle();
+});
+});
+</script>
 </head>
 
 
@@ -19,7 +27,7 @@
 	<div id="main">
 		<div id="header">
 	<h1>
-		<a href="/" class="link-text">AA E-Zine</a>
+		<a href="/" class="link-text logo">AA E-Zine</a>
 	</h1>
 </div>
 <div id="navbar">
@@ -28,6 +36,7 @@
 			<li><a class="page-link" href="/about/">About</a></li>
 			<li><a class="page-link" href="/gallery/">Gallery</a></li>
 			<li><a class="page-link" href="/articles/">Articles</a></li>
+			<li><a class="page-link" href="/">Home</a></li>
 		</ul>
 	</div>
 </div>

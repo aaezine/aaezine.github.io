@@ -3,11 +3,11 @@ layout: default
 permalink: /
 ---
 
-<section class='page-section'>
+<section class='page-section overflow'>
 	<div class='container-narrow'>
 		<ul class="blog-index">
 			{% for post in site.posts %}
-			<li class="mb-4 mb-md-6 mb-lg-8">
+			<li class="mb-4 mb-md-6 mb-lg-8 list">
 				<h2>
 					<a class="blog-index-link mr-2"
 						href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
@@ -15,11 +15,7 @@ permalink: /
 						<span class="octicon octicon-calendar pr-2"></span>
 						<time class="blog-index-time">{{ post.date | date: '%B %d,
 							%Y' }}</time>
-						<a href="https://github.com/{{ post.author }}"
-							class="author-link ml-3"><img
-							src="https://github.com/{{ post.author }}.png?size=36"
-							alt="{{ post.author }}" class="avatar mr-2">{{ post.author
-							}}</a>
+						{{ post.author }}</a>
 					</div>
 				</h2> {{ post.excerpt }}
 				<p>

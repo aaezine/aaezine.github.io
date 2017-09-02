@@ -12,6 +12,14 @@
 <link rel="alternate" type="application/rss+xml"
 	title="Asian American E-Zine" href="/feed.xml">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$('#article-tree').find('span').click(function(e){
+    $(this).parent().children('ul').toggle();
+});
+});
+</script>
 </head>
 
 
@@ -19,7 +27,7 @@
 	<div id="main">
 		<div id="header">
 	<h1>
-		<a href="/" class="link-text">AA E-Zine</a>
+		<a href="/" class="link-text logo">AA E-Zine</a>
 	</h1>
 </div>
 <div id="navbar">
@@ -28,378 +36,188 @@
 			<li><a class="page-link" href="/about/">About</a></li>
 			<li><a class="page-link" href="/gallery/">Gallery</a></li>
 			<li><a class="page-link" href="/articles/">Articles</a></li>
+			<li><a class="page-link" href="/">Home</a></li>
 		</ul>
 	</div>
 </div>
 
 		
 		
-		<div id="middle"><script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script type="text/javascript">
-	$(function() {
-		$('#example_tree').find('SPAN').click(function(e) {
-			$(this).parent().children('UL').toggle();
-		});
-	});
-</script>
-<section class='page-section'>
-	<div class='container-narrow'>
-		<ul id='article_tree' class='article-tree'>
-			
-			<li class='article-tree'><span>2017</span>
-				<ul>
-					
-					<li><span>January</span>
-						<ul>
-							 
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>   
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample.html">Sample</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>  </li>
-				</ul> 
-					<li><span>February</span>
-						<ul>
-							 
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>   
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample.html">Sample</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>  </li>
-				</ul> 
-					<li><span>March</span>
-						<ul>
-							 
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>   
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample.html">Sample</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>  </li>
-				</ul> 
-					<li><span>April</span>
-						<ul>
-							 
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>   
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample.html">Sample</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>  </li>
-				</ul> 
-					<li><span>May</span>
-						<ul>
-							 
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>   
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample.html">Sample</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>  </li>
-				</ul> 
-					<li><span>June</span>
-						<ul>
-							 
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>   
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample.html">Sample</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>  </li>
-				</ul> 
-					<li><span>July</span>
-						<ul>
-							 
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>   
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample.html">Sample</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>  </li>
-				</ul> 
-					<li><span>August</span>
-						<ul>
-							 
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>   
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample.html">Sample</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>  </li>
-				</ul> 
-					<li><span>September</span>
-						<ul>
-							 
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>   
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample.html">Sample</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>  </li>
-				</ul> 
-					<li><span>October</span>
-						<ul>
-							 
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>   
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample.html">Sample</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>  </li>
-				</ul> 
-					<li><span>November</span>
-						<ul>
-							 
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>   
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample.html">Sample</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>  </li>
-				</ul> 
-					<li><span>December</span>
-						<ul>
-							 
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>   
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="/2017/09/01/Sample.html">Sample</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> September
-											01, 2017</time>
-									</div>
-							</span></li>  </li>
-				</ul> </li>
-		</ul>
-		</br> 
-			<li class='article-tree'><span>2016</span>
-				<ul>
-					
-					<li><span>January</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>February</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>March</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>April</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>May</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>June</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>July</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>August</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>September</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>October</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>November</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>December</span>
-						<ul>
-							    </li>
-				</ul> </li>
-		</ul>
-		</br> 
-			<li class='article-tree'><span>2015</span>
-				<ul>
-					
-					<li><span>January</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>February</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>March</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>April</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>May</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>June</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>July</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>August</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>September</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>October</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>November</span>
-						<ul>
-							    </li>
-				</ul> 
-					<li><span>December</span>
-						<ul>
-							    </li>
-				</ul> </li>
-		</ul>
-		</br> 
-		</ul>
-	</div>
-</section></div>
+		<div id="middle"><div class='content overflow'>
+<h2>ARTICLES</h2>
+	<section class='page-section'>
+		<div class='container-narrow'>
+			<ul id='article-tree' class='article-tree'>
+				
+				<li class='article-tree'><span class='expandable'>2017</span>
+					<ul class='hidden'>
+						
+						<li><span class='expandable'>January</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>February</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>March</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>April</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>May</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>June</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>July</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>August</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>September</span>
+							<ul class='hidden'>
+								 
+								<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
+										class="list" href="/2017/09/01/Sample.html">Sample</a>
+								</span></li>   
+								<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
+										class="list" href="/2017/09/01/Sample-Post.html">Sample Post</a>
+								</span></li>  </li>
+					</ul> 
+						<li><span class='expandable'>October</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>November</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>December</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> </li>
+			</ul>
+			</br> 
+				<li class='article-tree'><span class='expandable'>2016</span>
+					<ul class='hidden'>
+						
+						<li><span class='expandable'>January</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>February</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>March</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>April</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>May</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>June</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>July</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>August</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>September</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>October</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>November</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>December</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> </li>
+			</ul>
+			</br> 
+				<li class='article-tree'><span class='expandable'>2015</span>
+					<ul class='hidden'>
+						
+						<li><span class='expandable'>January</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>February</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>March</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>April</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>May</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>June</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>July</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>August</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>September</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>October</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>November</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> 
+						<li><span class='expandable'>December</span>
+							<ul class='hidden'>
+								    </li>
+					</ul> </li>
+			</ul>
+			</br> 
+			</ul>
+		</div>
+	</section>
+</div></div>
 		
 		
 		<div id="footer">

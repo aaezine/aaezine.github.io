@@ -21,39 +21,27 @@ months:
 ---
 
 
-
-
-
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
-<script type="text/javascript">
-	$(function() {
-		$('#article_tree').find('span').click(function(e) {
-			$(this).parent().children('ul').toggle();
-		});
-	});
-</script>
-<section class='page-section'>
-	<div class='container-narrow'>
-		<ul id='article_tree' class='article-tree'>
-			{% for year in page.years %}
-			<li class='article-tree'><span>{{ year }}</span>
-				<ul>
-					{% for month in page.months %}
-					<li><span>{{ month }}</span>
-						<ul>
-							{% for post in site.posts %} {% if post.year == year %}
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="{{ post.url | prepend: site.baseurl }}">{{
-										post.title }}</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> {{ post.date | date: '%B
-											%d, %Y' }}</time>
-									</div>
-							</span></li> {% endif %} {% endfor %}</li>
-				</ul> {% endfor %}</li>
-		</ul>
-		</br> {% endfor %}
-		</ul>
-	</div>
-</section>
+<div class='content overflow'>
+<h2>ARTICLES</h2>
+	<section class='page-section'>
+		<div class='container-narrow'>
+			<ul id='article-tree' class='article-tree'>
+				{% for year in page.years %}
+				<li class='article-tree'><span class='expandable'>{{ year }}</span>
+					<ul class='hidden'>
+						{% for month in page.months %}
+						<li><span class='expandable'>{{ month }}</span>
+							<ul class='hidden'>
+								{% for post in site.posts %} {% if post.year == year and
+								post.month == month %}
+								<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
+										class="list" href="{{ post.url | prepend: site.baseurl }}">{{
+											post.title }}</a>
+								</span></li> {% endif %} {% endfor %}</li>
+					</ul> {% endfor %}</li>
+			</ul>
+			</br> {% endfor %}
+			</ul>
+		</div>
+	</section>
+</div>

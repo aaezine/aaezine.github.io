@@ -10,18 +10,19 @@ h1 {
 #main {
 	width: 1000px;
 	margin: auto;
-	background: #d7d7d7;
+	background: #a20000;
 	border: solid 2px;
 }
 
 #header {
 	height: 60px;
-	background: #d7d7d7;
+	background: black;
 	padding: 10px;
 }
 
 a.link-text {
 	text-decoration: none;
+	color: white;
 }
 
 #navbar {
@@ -47,6 +48,15 @@ a.link-text {
 
 .article-tree {
 	font-size: 20px;
+	list-style-type: none;
+}
+
+span.expandable:hover {
+	color: #8080c0;
+}
+
+.hidden {
+	display: none;
 }
 
 .article-date {
@@ -54,9 +64,19 @@ a.link-text {
 }
 
 #middle {
-	height: 600px;
+	min-height: 600px;
+	height: 100%;
 	background: #d7d7d7;
 	padding: 10px;
+}
+
+.content {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.overflow {
+	overflow: hidden;	
 }
 
 #post {

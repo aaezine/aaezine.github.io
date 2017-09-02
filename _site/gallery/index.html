@@ -12,6 +12,14 @@
 <link rel="alternate" type="application/rss+xml"
 	title="Asian American E-Zine" href="/feed.xml">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script type="text/javascript">
+$(function(){
+$('#article-tree').find('span').click(function(e){
+    $(this).parent().children('ul').toggle();
+});
+});
+</script>
 </head>
 
 
@@ -19,7 +27,7 @@
 	<div id="main">
 		<div id="header">
 	<h1>
-		<a href="/" class="link-text">AA E-Zine</a>
+		<a href="/" class="link-text logo">AA E-Zine</a>
 	</h1>
 </div>
 <div id="navbar">
@@ -28,61 +36,19 @@
 			<li><a class="page-link" href="/about/">About</a></li>
 			<li><a class="page-link" href="/gallery/">Gallery</a></li>
 			<li><a class="page-link" href="/articles/">Articles</a></li>
+			<li><a class="page-link" href="/">Home</a></li>
 		</ul>
 	</div>
 </div>
 
 		
 		
-		<div id="middle"><section class='page-section'>
-	<div class='container-narrow'>
-		<ul class="blog-index">
-			
-			<li class="mb-4 mb-md-6 mb-lg-8">
-				<h2>
-					<a class="blog-index-link mr-2"
-						href="/2017/09/01/Sample-Post.html">Sample Post</a>
-					<div class="who-when mt-1">
-						<span class="octicon octicon-calendar pr-2"></span>
-						<time class="blog-index-time">September 01,
-							2017</time>
-						<a href="https://github.com/Cindy Wu"
-							class="author-link ml-3"><img
-							src="https://github.com/Cindy Wu.png?size=36"
-							alt="Cindy Wu" class="avatar mr-2">Cindy Wu</a>
-					</div>
-				</h2> <p>To add new posts, simply add a file in the <code class="highlighter-rouge">_posts</code> directory that follows the convention <code class="highlighter-rouge">YYYY-MM-DD-name-of-post.ext</code> and includes the necessary front matter. Take a look at the source for this post to get an idea about how it works.</p>
+		<div id="middle"><div class="content overflow">
+	<h2>GALLERY</h2>
 
-
-				<p>
-					<a href="/2017/09/01/Sample-Post.html">Read more <span
-						class="octicon octicon-arrow-small-right"></span></a>
-				</p>
-			</li> 
-			
-			<li class="mb-4 mb-md-6 mb-lg-8">
-				<h2>
-					<a class="blog-index-link mr-2"
-						href="/2017/09/01/Sample.html">Sample</a>
-					<div class="who-when mt-1">
-						<span class="octicon octicon-calendar pr-2"></span>
-						<time class="blog-index-time">September 01,
-							2017</time>
-						<a href="https://github.com/"
-							class="author-link ml-3"><img
-							src="https://github.com/.png?size=36"
-							alt="" class="avatar mr-2"></a>
-					</div>
-				</h2> THi si s a sample.
-				<p>
-					<a href="/2017/09/01/Sample.html">Read more <span
-						class="octicon octicon-arrow-small-right"></span></a>
-				</p>
-			</li> 
-			
-		</ul>
-	</div>
-</section></div>
+	this will be images.
+</div>
+</div>
 		
 		
 		<div id="footer">
