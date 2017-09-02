@@ -20,36 +20,46 @@ months:
 - December 
 ---
 
-<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<head>
 <script type="text/javascript">
-	$(function() {
-		$('#example_tree').find('SPAN').click(function(e) {
-			$(this).parent().children('UL').toggle();
-		});
-	});
+var allSpan = document.getElementsByTagName('span');
+for(var i = 0; i < allSpan.length; i++){
+    allSpan[i].onclick=function(){
+        if(this.parentNode){
+            var childList = this.parentNode.getElementsByTagName('ul');
+            for(var j = 0; j< childList.length;j++){
+                var currentState = childList[j].style.display;
+                if(currentState=="none"){
+                    childList[j].style.display="block";
+                }else{
+                    childList[j].style.display="none";
+                }
+            }
+        }
+    }
+}
 </script>
+</head>
 <section class='page-section'>
 	<div class='container-narrow'>
 		<ul id='article_tree' class='article-tree'>
-			{% for year in page.years %}
-			<li class='article-tree'><span>{{ year }}</span>
-				<ul>
-					{% for month in page.months %}
-					<li><span>{{ month }}</span>
-						<ul>
-							{% for post in site.posts %} {% if post.year == year %}
-							<li class="mb-4 mb-md-6 mb-lg-8 list"><span> <a
-									class="list" href="{{ post.url | prepend: site.baseurl }}">{{
-										post.title }}</a>
-									<div class="who-when mt-1">
-										<span class="octicon octicon-calendar pr-2"></span>
-										<time class="blog-index-time"> {{ post.date | date: '%B
-											%d, %Y' }}</time>
-									</div>
-							</span></li> {% endif %} {% endfor %}</li>
-				</ul> {% endfor %}</li>
-		</ul>
-		</br> {% endfor %}
+			{% for year in page.years %} <li class='article-tree'><span>{{ year }}</span>
+			<ul>
+			{% for month in page.months %} <li><span>{{ month }}</span>
+			<ul>
+			{% for post in site.posts %}
+			{% if post.year == year %}
+			<li class="mb-4 mb-md-6 mb-lg-8 list">
+				<span>
+					<a class="list"
+						href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+					<div class="who-when mt-1">
+						<span class="octicon octicon-calendar pr-2"></span>
+						<time class="blog-index-time"> 
+							{{ post.date | date: '%B %d, %Y' }}</time>
+					</div>
+				</span>
+			</li>  {% endif %} {% endfor %} </li> </ul> {% endfor %} </li> </ul> </br> {% endfor %}
 		</ul>
 	</div>
 </section>
