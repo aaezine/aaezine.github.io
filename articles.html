@@ -30,7 +30,7 @@ $('#article_tree').find('span').click(function(e){
 
 <section class='page-section'>
 	<div class='container-narrow'>
-		<ul id='article_tree'>
+		<ul id='article_tree' class='article-tree'>
 			{% for year in page.years %} <li><span>{{ year }}</span></li> 
 			<ul>
 			{% for post in site.posts %}
