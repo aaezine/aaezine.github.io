@@ -23,8 +23,7 @@ months:
 <section class='page-section'>
 	<div class='container-narrow'>
 		<ul class="blog-index">
-		<details>
-			{% for year in page.years %} <summary>{{ year }}</summary> {% for post in site.posts %}
+			{% for year in page.years %} <details> <summary>{{ year }}</summary> {% for post in site.posts %}
 			{% if post.year == year %}
 			<li class="mb-4 mb-md-6 mb-lg-8">
 					<a class="blog-index-link mr-2"
@@ -34,7 +33,7 @@ months:
 						<time class="blog-index-time"> 
 							{{ post.date | date: '%B %d, %Y' }}</time>
 					</div>
-			</li>  {% endif %} </details> {% endfor %} </br> {% endfor %}
+			</li>  {% endif %}  {% endfor %} </details> </br> {% endfor %}
 		</ul>
 	</div>
 </section>
