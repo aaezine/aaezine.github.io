@@ -23,9 +23,9 @@ months:
 <section class='page-section'>
 	<div class='container-narrow'>
 		<ul id='article_tree' class='article-tree'>
-			{% for year in page.years %} <li><span>{{ year }}</span></li> 
+			{% for year in page.years %} <li class='article-tree'><span>{{ year }}</span>
 			<ul>
-			{% for month in page.month %} <li><span>{{ month }}</span></li> 
+			{% for month in page.month %} <li><span>{{ month }}</span>
 			<ul>
 			{% for post in site.posts %}
 			{% if post.year == year %}
@@ -39,7 +39,7 @@ months:
 							{{ post.date | date: '%B %d, %Y' }}</time>
 					</div>
 				</span>
-			</li>  {% endif %} {% endfor %} </ul> {% endfor %} </ul> </br> {% endfor %}
+			</li>  {% endif %} {% endfor %} </li> </ul> {% endfor %} </li> </ul> </br> {% endfor %}
 		</ul>
 	</div>
 </section>
