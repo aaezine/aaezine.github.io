@@ -20,12 +20,23 @@ months:
 - December 
 ---
 
+<script type="text/javascript">
+$(function(){
+$('#article_tree').find('span').click(function(e){
+    $(this).parent().children('ul').toggle();
+});
+});
+</script>
+
 <section class='page-section'>
 	<div class='container-narrow'>
-		<ul class='list'>
-			{% for year in page.years %} <details> <summary>{{ year }}</summary> {% for post in site.posts %}
+		<ul id='article_tree'>
+			{% for year in page.years %} <li><span>{{ year }}</span></li> 
+			<ul>
+			{% for post in site.posts %}
 			{% if post.year == year %}
 			<li class="mb-4 mb-md-6 mb-lg-8 list">
+				<span>
 					<a class="list"
 						href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 					<div class="who-when mt-1">
@@ -33,7 +44,8 @@ months:
 						<time class="blog-index-time"> 
 							{{ post.date | date: '%B %d, %Y' }}</time>
 					</div>
-			</li>  {% endif %}  {% endfor %} </details> </br> {% endfor %}
+				</span>
+			</li>  {% endif %}  {% endfor %} </ul> </br> {% endfor %}
 		</ul>
 	</div>
 </section>
