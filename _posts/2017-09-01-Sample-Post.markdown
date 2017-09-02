@@ -2,6 +2,8 @@
 layout: post
 title:  Sample Post
 date:   2017-09-01 15:45:21 -0400
+year: 2017
+month: september
 author: Cindy Wu
 ---
 
