@@ -25,7 +25,7 @@ months:
 		<ul id='article_tree' class='article-tree'>
 			{% for year in page.years %} <li class='article-tree'><span>{{ year }}</span>
 			<ul>
-			{% for month in page.month %} <li><span>{{ month }}</span>
+			{% for month in page.months %} <li><span>{{ month }}</span>
 			<ul>
 			{% for post in site.posts %}
 			{% if post.year == year %}
