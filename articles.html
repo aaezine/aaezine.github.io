@@ -13,8 +13,8 @@ permalink: /articles/
 						href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
 					<div class="who-when mt-1">
 						<span class="octicon octicon-calendar pr-2"></span>
-						{{post.year}}
-						<time class="blog-index-time">							{% if post.year == '2017' %} HELLA {% endif %}
+						{{post.month}}
+						<time class="blog-index-time">							{% if post.year == 2017 %} HELLA {% endif %}
 						{{ post.date | date: '%B %d,
 							%Y' }}</time>
 					</div>
