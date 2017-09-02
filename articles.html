@@ -22,7 +22,7 @@ months:
 
 <section class='page-section'>
 	<div class='container-narrow'>
-		<ul>
+		<ul class='list'>
 			{% for year in page.years %} <details> <summary>{{ year }}</summary> {% for post in site.posts %}
 			{% if post.year == year %}
 			<li class="mb-4 mb-md-6 mb-lg-8 list">
