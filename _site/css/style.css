@@ -40,6 +40,19 @@ a.link-text {
 	list-style-type: none;
 }
 
+.list {
+	list-style-type: none;
+	text-decoration: none;	
+}
+
+.article-tree {
+	font-size: 20px;
+}
+
+.article-date {
+	font-size: 20px;
+}
+
 #middle {
 	height: 600px;
 	background: #d7d7d7;

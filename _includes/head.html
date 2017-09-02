@@ -10,4 +10,13 @@
 	title="Asian American E-Zine" href="/feed.xml">
 <link rel="stylesheet" type="text/css" href="/css/style.css">
 <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+<script type="text/javascript">
+$(function(){
+$('#article_tree').find('span').click(function(e){
+    $(this).parent().children('ul').toggle();
+});
+});
+</script>
+
 </head>
