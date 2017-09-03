@@ -84,8 +84,7 @@ span.expandable:hover {
 }
 
 .content {
-	padding-left: 20px;
-	padding-right: 20px;
+	padding:30px;
 }
 
 .block {
