@@ -11,9 +11,6 @@ To add new posts, simply add a file in the `_posts` directory that follows the c
 
 **bold**
 
-###What is this
-![image-source](/images/test.jpg)
-
 {% highlight ruby %}
 def print_hi(name)
   puts "Hi, #{name}"

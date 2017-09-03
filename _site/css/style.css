@@ -7,6 +7,14 @@ h1 {
 	margin: 0px;
 }
 
+h2 {
+	margin: 0px;
+}
+
+h3 {
+	margin: 0px;
+}
+
 #main {
 	width: 1000px;
 	margin: auto;
@@ -45,6 +53,11 @@ a.link-text {
 	list-style-type: none;
 	text-decoration: none;	
 }
+.index {
+	padding-left: 30px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
 
 .article-tree {
 	font-size: 20px;
@@ -75,12 +88,16 @@ span.expandable:hover {
 	padding-right: 20px;
 }
 
+.block {
+	padding-right: 30px;
+}
+
 .overflow {
 	overflow: hidden;	
 }
 
 #post {
-	padding: 20px;
+	padding: 30px;
 }
 
 #footer {
@@ -89,4 +106,14 @@ span.expandable:hover {
 	font: white;
 	border-top: solid 10px;
 	padding: 10px;
+}
+
+.float-left {
+	float: left;
+	margin: 10px;
+}
+
+.float-right {
+	float: right;
+	margin: 10px;
 }
