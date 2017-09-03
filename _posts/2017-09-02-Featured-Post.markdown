@@ -15,10 +15,7 @@ To add image:
 [image-source] () <- in parens /images/image.name and no space between the brackets and parens
 
 (put image in images folder and name file. Ideally should organize images into years too...)
-
-<div class='float-left'>
 <img src="/images/test.jpg" height='360px'>
-</div>
 
 use any number of "#" followed by a space to change size.
 
