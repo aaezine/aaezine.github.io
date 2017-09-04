@@ -30,6 +30,9 @@ h3 {
 
 a.link-text {
 	text-decoration: none;
+}
+
+.logo {
 	color: white;
 }
 
@@ -62,10 +65,15 @@ a.link-text {
 .article-tree {
 	font-size: 20px;
 	list-style-type: none;
+	padding-left: 20px;
+}
+#article-tree {
+	padding-left: 0px;
 }
 
 span.expandable:hover {
 	color: #8080c0;
+	cursor: pointer;
 }
 
 .hidden {
@@ -79,8 +87,22 @@ span.expandable:hover {
 #middle {
 	min-height: 600px;
 	height: 100%;
-	background: #d7d7d7;
+	background: #e6e6e6;
 	padding: 10px;
+}
+
+#post-area {
+	width: 800px;
+}
+
+#other-area {
+	width: 160px;
+	height: auto;
+	padding-left: 10px;
+	margin-top: 40px;
+	float: right;
+	border-left: solid 2px black;
+	background: #d7d7d7;
 }
 
 .content {
