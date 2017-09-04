@@ -1,10 +1,19 @@
 --- 
 layout: default 
-permalink: /gallery/
+permalink: /gallery/ 
 ---
 
 <div class="content overflow">
 	<h2>GALLERY</h2>
+			{{site.albums}}
 
-	this will be images.
+	<section class='page-section'>
+		<div class='container-narrow'>
+			<ul>
+			{% for folder in site.albums %} 
+			Hello 
+			{% endfor %}
+			</ul>
+		</div>
+	</section>
 </div>
