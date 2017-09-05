@@ -1,2 +1,10 @@
 collections:
-    featured: {output: true}
+  albums:
+    output: true
+    permalink: /:categories/:title
+  featured:
+    output: true
+    permalink: /:year/:month/:day/:title/
+  posts:
+    permalink: /:year/:month/:day/:title/
+    

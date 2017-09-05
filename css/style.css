@@ -1,3 +1,20 @@
+li {
+	list-style-type: none;
+}
+
+a {
+	color: #636363;	
+	text-decoration: none;	
+}
+
+a:visited {
+	color: black;
+}	
+
+a:hover {
+	font-size: 105%;
+}
+
 body {
 	background: #d7d7d7;
 	font-family: Open Sans, Tahoma, sans-serif;
@@ -36,6 +53,16 @@ a.link-text {
 .logo {
 	color: white;
 }
+a.logo:visited {
+	color: white;
+}
+a.logo:hover {
+	font-size: 100%;
+}
+
+.heading {
+	margin-left: 5px;
+}
 
 #navbar {
 	height: 40px;
@@ -51,6 +78,15 @@ a.link-text {
 	padding: 10px;
 	float: right;
 	list-style-type: none;
+}
+
+.nav-item {
+	text-align: center;
+	width: 50px;
+}
+
+.nav-item:hover {
+	background: #d7d7d7;
 }
 
 .list {
@@ -99,11 +135,25 @@ span.expandable:hover {
 #other-area {
 	width: 160px;
 	height: auto;
-	padding-left: 10px;
 	margin-top: 40px;
 	float: right;
 	border-left: solid 2px black;
 	background: #d7d7d7;
+}
+
+.menu {
+	padding: 0px;
+	margin: 0px;
+}
+
+.resource-item {
+	padding: 5px;
+	font-size: 15px;
+}
+
+.resource-item:hover {
+	background: #a7a7a7;
+	border-left: solid 3px;
 }
 
 .content {
@@ -122,12 +172,28 @@ span.expandable:hover {
 	padding: 30px;
 }
 
+.credentials {
+	font-size: 15px;
+}
+
+#about {
+	padding: 20px;
+}
+
 #footer {
 	height: 100px;
 	background: black;
 	font: white;
 	border-top: solid 10px;
 	padding: 10px;
+}
+
+a.contact {
+	color: white;
+}
+
+a.contact:hover {
+	font-size: 100%;
 }
 
 .float-left {
@@ -139,3 +205,5 @@ span.expandable:hover {
 	float: right;
 	margin: 10px;
 }
+
+

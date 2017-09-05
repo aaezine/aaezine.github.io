@@ -4,9 +4,8 @@ permalink: /
 ---
 
 
-<div id="other-area" class="overflow">
-	<h4>Other Resources</h4>
-</div>
+{% include resources.html %}
+
 <div class='container-narrow overflow' id="post-area">
 	<ul class="blog-index list index">
 		{% for post in site.featured %}
@@ -14,13 +13,14 @@ permalink: /
 			<h2>
 				<a class="blog-index-link mr-2"
 					href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-				<div class="who-when mt-1">
+			</h2>
+				<div class="who-when mt-1 credentials">
 					<span class="octicon octicon-calendar pr-2"></span>
 					<time class="blog-index-time">{{ post.date | date: '%B %d,
 						%Y' }}</time>
 					<br> {{ post.author }}</a>
 				</div>
-			</h2> {{ post.excerpt }}
+			{{ post.excerpt }}
 			<p>
 				<a href="{{ post.url | prepend: site.baseurl }}">Read more <span
 					class="octicon octicon-arrow-small-right"></span></a>

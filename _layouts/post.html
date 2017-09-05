@@ -9,7 +9,7 @@
 		
 		
 		<div id="middle"><div id="post"><h2>{{page.title}}</h2>
-		<h3> {{ page.date | date: '%B %d, %Y' }} <br> {{page.author}}</h3>{{ content }}</div></div>
+		<div class="credentials"> {{ page.date | date: '%B %d, %Y' }} <br> {{page.author}}</div>{{ content }}</div></div>
 		
 		
 		{% include footer.html %}
