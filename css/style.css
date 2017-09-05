@@ -3,20 +3,20 @@ li {
 }
 
 a {
-	color: #4c4c4c;	
-	text-decoration: none;	
+	color: #4c4c4c;
+	text-decoration: none;
 }
 
 a:visited {
 	color: black;
-}	
+}
 
 a:hover {
 	font-size: 105%;
 }
 
-body  {
-	background-image: linear-gradient(red, #f06d06);
+body {
+	background-image: linear-gradient(white, #d9fafd);
 	font-family: Open Sans, Tahoma, sans-serif;
 }
 
@@ -53,9 +53,11 @@ a.link-text {
 .logo {
 	color: white;
 }
+
 a.logo:visited {
 	color: white;
 }
+
 a.logo:hover {
 	font-size: 100%;
 }
@@ -91,8 +93,9 @@ a.logo:hover {
 
 .list {
 	list-style-type: none;
-	text-decoration: none;	
+	text-decoration: none;
 }
+
 .index {
 	padding-left: 30px;
 	margin-top: 30px;
@@ -104,6 +107,7 @@ a.logo:hover {
 	list-style-type: none;
 	padding-left: 20px;
 }
+
 #article-tree {
 	padding-left: 0px;
 }
@@ -157,7 +161,7 @@ span.expandable:hover {
 }
 
 .content {
-	padding:30px;
+	padding: 30px;
 }
 
 .block {
@@ -165,7 +169,7 @@ span.expandable:hover {
 }
 
 .overflow {
-	overflow: hidden;	
+	overflow: hidden;
 }
 
 #post {
@@ -205,5 +209,3 @@ a.contact:hover {
 	float: right;
 	margin: 10px;
 }
-
-
