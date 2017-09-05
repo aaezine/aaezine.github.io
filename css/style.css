@@ -93,6 +93,12 @@ a.logo:hover {
 	background: #d7d7d7;
 }
 
+#banner {
+	width: auto;
+	height: 200px;
+	background-image: url('../images/TopBanner.png');
+}
+
 .list {
 	list-style-type: none;
 	text-decoration: none;
