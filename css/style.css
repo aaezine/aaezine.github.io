@@ -15,8 +15,8 @@ a:hover {
 	font-size: 105%;
 }
 
-body {
-	background: white;
+body  {
+	background-image: linear-gradient(red, #f06d06);
 	font-family: Open Sans, Tahoma, sans-serif;
 }
 
