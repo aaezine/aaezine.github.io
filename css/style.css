@@ -16,7 +16,7 @@ a:hover {
 }
 
 body {
-	background-image: linear-gradient(white, #d9fafd);
+	background-image: linear-gradient(#d9fafd, white);
 	font-family: Open Sans, Tahoma, sans-serif;
 }
 
