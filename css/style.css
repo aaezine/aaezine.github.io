@@ -102,6 +102,14 @@ a.logo:hover {
 	border-bottom: solid 2px;
 }
 
+#banner-container {
+	width: auto;
+	min-height: 200px;
+	max-height: 200px;
+	height: 200px;
+	background: white;
+}
+
 #banner {
 	width: auto;
 	height: 200px;
